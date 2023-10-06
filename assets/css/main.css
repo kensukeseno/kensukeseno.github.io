@@ -3698,9 +3698,31 @@ input, select, textarea {
 			margin: 0 auto;
 			width: 55em;
 		}
+
+		/* Modification aaaaaa */
+		@media screen and (max-width: 980px) {
+			.wrapper.alt.spotlight.style2 h2{
+				padding: 0 0 1em 0 ;
+				margin: 0 2em;
+			}
+		}
+		/* Modification */
+		@media screen and (min-width: 980px) {
+			.wrapper.alt.spotlight.style2 h2{
+				padding: 0 0 1em 0 ;
+				margin-left: auto;
+				margin-right:auto;
+				width: 46em;
+			}
+		}
+
+
+
+
+		
 		/* Modification */
 		.wrapper.spotlight.wrapper.style3 .inner {
-			padding: 0em 2em 0.1em 2em ;
+			padding-top: 0
 		}
 
 		.wrapper.style2 {
@@ -3831,8 +3853,8 @@ input, select, textarea {
 				width: 100%;
 				-ms-flex: 2;
 			}
-
-			.wrapper.spotlight:nth-child(2n - 1) .inner {
+			/* Modification */
+			.wrapper.spotlight:nth-child(/* 2n - 1 */1) .inner {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
@@ -3840,7 +3862,7 @@ input, select, textarea {
 				text-align: right;
 			}
 
-			.wrapper.spotlight:nth-child(2n - 1) .image {
+			.wrapper.spotlight:nth-child(/* 2n - 1 */1) .image {
 				margin: 0 0 2em 3em;
 			}
 
@@ -3960,16 +3982,16 @@ input, select, textarea {
 					width: 100%;
 				}
 				/* Modification */
-				.wrapper.spotlight.wrapper.style3 .inner {
-					padding: 0em 2em 0.1em 2em ;
-				}
+				/* .wrapper.spotlight.wrapper.style3 .inner {
+					padding: 3em 3em 1em 3em ;
+				} */
 
 				.wrapper.spotlight .image {
 					margin: 0 2em 2em 0;
 					width: 32em;
 				}
-
-				.wrapper.spotlight:nth-child(2n - 1) .image {
+				/* Modification */
+				.wrapper.spotlight:nth-child(/* 2n - 1 */1) .image {
 					margin: 0 0 2em 2em;
 				}
 
@@ -4024,8 +4046,8 @@ input, select, textarea {
 					width: 19em;
 					margin: 0 1.75em 2em 0;
 				}
-
-				.wrapper.spotlight:nth-child(2n - 1) .image {
+				/* Modification */
+				.wrapper.spotlight:nth-child(/* 2n - 1 */1) .image {
 					margin: 0 0 2em 1.75em;
 				}
 
