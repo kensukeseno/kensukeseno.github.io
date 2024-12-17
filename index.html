@@ -1,231 +1,305 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Kensuke Seno Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fc56f060fa.js" crossorigin="anonymous"></script>
+    <title>Kensuke Seno</title>
 </head>
 
-<body class="is-preload">
+<body>
+    <div class="nav-bar">
+        <nav>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn fa-solid fa-bars"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">About Me</a>
+                    <a href="#work">Work History</a>
+                    <a href="#project">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="inner-link">
+                <ul>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work History</a>
+                    </li>
+                    <li>
+                        <a href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="linkedin"><a href="https://www.linkedin.com/in/kensuke-ken-seno-8a583a280/"><img
+                        src="images/linkedin.png"></a></div>
+        </nav>
+    </div>
+    <div class="main">
+        <section class="top">
+            <h1><span></span></h1>
+            <h2><span></span></h2>
+        </section>
+        <section id="about">
+            <div class="about-wrapper">
+                <div>
+                    <h2>Kensuke Seno</h2>
+                    <p>A full-stack developer with 1+ year work experience in software development. Passionate about
+                        developing
+                        both
+                        technical and interpersonal skills to make a positive contribution to the world. Ken believes
+                        that
+                        "Teamwork" is the key for software development, so it is always his priority to communicate
+                        effectively
+                        and
+                        clearly with all stakeholders of a project. Ken immigrated to Calgary from Japan in May 2023 and
+                        is
+                        looking
+                        for software development opportunities.</p>
+                    <a href="pdf/Resume_Kensuke_Seno.pdf">Click here to download my resume</a>
+                </div>
+                <img src="images/professional_photo.jpg">
+            </div>
+        </section>
+        <section id="work">
+            <h2>Work History</h2>
+            <div class="job-wrapper">
+                <table class="job">
+                    <tr>
+                        <td colspan="2">
+                            <h3>CJCA IT Committee</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Volunteer</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>2024/Dec to current</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Providing general technology support for the Calgary Japanese Community Association</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Key Words: <br>WordPress, Google Workspace<br></td>
+                    </tr>
+                </table>
+                <table class="job">
+                    <tr>
+                        <td colspan="2">
+                            <h3>NIC, Inc.</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Fulltime Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>2022/Jan to 2023/Mar</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Developed, tested, modified programms of an international banking system</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Key Words: <br>Software development, Web application, Java</td>
+                    </tr>
+                </table>
+                <table class="job">
+                    <tr>
+                        <td colspan="2">
+                            <h3>Sumitomo Metal Mining Co., Ltd.</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Minereal Processing Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>2019/Apr to 2021/Dec</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-regular fa-square-check"></i>
+                        </td>
+                        <td>Lead and conducted experiments to improve process efficiencies</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Key Words: <br>Project management, Reporting, Presentation</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="project">
+            <h2>Projects</h2>
+            <div class="article-wrapper">
+                <article>
+                    <img src="images/fusion.png">
+                    <div>
+                        <h3>Fusion Sushi Ranchlands</h3>
+                        <p>This is the website for a restaurant called 'Fusion Sushi Ranchlands.' Built using WordPress,
+                            the website was fully developed by me. A design template was carefully selected to meet the
+                            client's expectations and further customized with CSS. From the design and specification
+                            phases to hosting, I handled the entire process.</p>
+                        <p>Technologies used: WordPress, CSS, Hosting</p>
+                        <p class="anckor-container">
+                            <a class="arrow" href="https://fusionsushiranchlands.com/">></a>
+                            <a href="https://fusionsushiranchlands.com/">Go to Website</a>
+                        </p>
+                        <a></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/mokaeikaiwa.png">
+                    <div>
+                        <h3>English conversation school (Mokaeikaiwa) website</h3>
+                        <p>This is a website for an English conversation school named "Mokaeikaiwa" in Japan. The school
+                            is
+                            targeting students aged from 3 to 18, so the website is designed to give friendly
+                            impressions by
+                            using bright colors and pictures of fun classes. Potential students can easily contact the
+                            school
+                            through the contact form on the website. I developed and launched the website, and am in
+                            charge
+                            of
+                            maintanance as well.</p>
+                        <p>Technologies used: HTML, CSS, Javascript</p>
+                        <p class="anckor-container">
+                            <a class="arrow" href="https://mokaeikaiwa.github.io/">></a>
+                            <a href="https://mokaeikaiwa.github.io/">Go to Website</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/frontend.png">
+                    <div>
+                        <h3>Ecommerce Website front-end</h3>
+                        <p>A front-end system of an ecommerce website that utilizes React.js. This is an user-friendly
+                            SPA(single page application). Bootstrap enhances the modern design of the website.
+                            Reseponsive
+                            design enables this website to expand its target users.
+                            The live app is deployed on AWS EC2 instance.</p>
+                        <p>Technologies used: React.js, TypeScript, Bootstrap, Node.js</p>
+                        <p class="anckor-container">
+                            <a class="arrow"
+                                href="https://github.com/kensukeseno/OnlineMarketHandmadeJewelry_forntend">></a>
+                            <a href="https://github.com/kensukeseno/OnlineMarketHandmadeJewelry_forntend">Go to Code</a>
+                        </p>
+                        <p class="anckor-container">
+                            <a class="arrow" href="http://3.133.130.195/">></a>
+                            <a href="http://3.133.130.195/">Go to Live App</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/backend.png">
+                    <div>
+                        <h3>Ecommerce Website back-end</h3>
+                        <p>A back-end system of an ecommerce website that utilizes Java with Spring Framwork. MVC model
+                            and
+                            Mybatis are used to allow this system to do CRUD operations on database. Users can create
+                            thier
+                            own
+                            accounts and save shopping histories with high scurity realized by Spring Security.</p>
+                        <p>Technologies used: Java, Spring boot, Spring scurity, Mybatis, PostgreSQL</p>
+                        <p class="anckor-container">
+                            <a class="arrow"
+                                href="https://github.com/kensukeseno/OnlineMarket_HandmadeJewelry_backend">></a>
+                            <a href="https://github.com/kensukeseno/OnlineMarket_HandmadeJewelry_backend">
+                                Go to Code
+                            </a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/empSys.png">
+                    <div>
+                        <h3>Employee info management system</h3>
+                        <p>Database management system. The back-end program is coded with Java and interacts with
+                            database,
+                            and
+                            the front-end is created using JSP.</p>
+                        <p>Technologies used: Java, PostgreSQL, CSS, Servlet, JSP</p>
+                        <p class="anckor-container">
+                            <a class="arrow" href="https://github.com/kensukeseno/EmpDbManagementSystem">></a><a
+                                href="https://github.com/kensukeseno/EmpDbManagementSystem">Go to Code</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/hackerrank.jpg">
+                    <div>
+                        <h3>Daily conding practice</h3>
+                        <p>Improving understanding of algorithms and data structures by solving problems from HackerRank
+                        </p>
+                        <p class="anckor-container"><a class="arrow"
+                                href="https://github.com/kensukeseno/HackerRankProsSolutions">></a><a
+                                href="https://github.com/kensukeseno/HackerRankProsSolutions">Go to Code</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get in touch</h2>
+            <div class="contact-wrapper">
+                <form method="post" action="https://formspree.io/f/xzblkwvb">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label><br>
+                            <input name="Name" id="name" type="text" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label><br>
+                            <input name="Email" id="email" type="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label><br>
+                            <textarea name="Message" id="message" rows="10" required></textarea>
+                        </div>
+                        <div class="actions"><input type="submit" value="Send Message" /></div>
+                    </div>
 
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Ken's portfolio</a></h1>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
-
-		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="#banner">Home</a></li>
-					<li><a href="#one">Short Bio</a></li>
-					<li><a href="#two">Work History</a></li>
-					<li><a href="#four">Projects</a></li>
-					<li><a href="#footer">Get in Touch</a></li>
-				</ul>
-				<a href="#" class="close">Close</a>
-			</div>
-		</nav>
-
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<h2>Hi I am Ken</h2>
-				<p>Software developer, Mineral processing engineer</p>
-			</div>
-		</section>
-
-		<!-- Wrapper -->
-		<section id="wrapper">
-
-			<!-- One -->
-			<section id="one" class="wrapper spotlight style1">
-				<div class="inner">
-					<a href="#" class="image"><img src="images/avatar.jpg" alt="" /></a>
-					<div class="content">
-						<h2 class="major">Kensuke Seno</h2>
-						<p>A full-stack developer with 1+ year work experience in software
-							development. Passionate about developing both technical and interpersonal skills to make a
-							positive contribution to the world. Ken believes that "Teamwork" is the key for software
-							development, so it is always his priority to communicate effectively and clearly with all
-							stakeholders of a project. Ken immigrated to Calgary from Japan in May 2023 and is looking
-							for software development opportunities.
-						</p>
-						<a href="\pdf\Resume_Kensuke_Seno.pdf">Click here to download my resume</a>
-					</div>
-				</div>
-			</section>
-
-			<!-- Two -->
-			<section id="two" class="wrapper alt spotlight style2">
-				<h2 class="major">Work History</h2>
-				<div class="inner">
-
-					<a class="image"><img src="images/software_development.jpg" alt="" /></a>
-					<div class="content">
-						<h3>Software Developer</h3>
-						<p>Worked for Nic, Inc. from 2022/January to 2023/March
-							<br>Developed, tested, modified programms of an international banking system</br>
-							<br>Key words: Software development, Web application, Java</br>
-						</p>
-					</div>
-				</div>
-			</section>
-
-
-			<!-- Three -->
-			<section id="three" class="wrapper spotlight style3">
-				<div class="inner">
-					<a class="image"><img src="images/plant.jpg" alt="" /></a>
-					<div class="content">
-						<h3>Mineral Processing Engineer</h3>
-						<p>Worked for Sumitomo Metal Mining Co., Ltd. from 2019/April to 2021/December
-							<br>Lead and conducted experiments to improve process efficiencies</br>
-							<br>Key words: Project management, Reporting, Presentation</br>
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Four -->
-			<section id="four" class="wrapper alt style1">
-				<div class="inner">
-					<h2 class="major">Projects</h2>
-					<section class="features">
-						<article>
-							<a class="image"><img src="images/frontend.png" alt="" /></a>
-							<h3 class="major">Ecommerce Website front-end</h3>
-							<p>A front-end system of an ecommerce website that utilizes React.js. This is an
-								user-friendly SPA(single page application). Bootstrap enhances the modern design of the
-								website. Reseponsive design enables this website to expand its target users.<br>
-								The live app is deployed on AWS EC2 instance.
-								<br>
-								<span style="color: rgb(255, 153, 0)">Technologies used: React.js, TypeScript,
-									Bootstrap,
-									Node.js
-								</span>
-							</p>
-							<a href="https://github.com/kensukeseno/EcSiteSample_OnlineMarketHandmadeJewelry_forntend"
-								class="special">Go to codes</a>
-							<a href="http://3.133.130.195/" class="special">Go to Live APP</a>
-						</article>
-						<article>
-							<a class="image"><img src="images/backend.png" alt="" /></a>
-							<h3 class="major">Ecommerce Website back-end</h3>
-							<p>A back-end system of an ecommerce website that utilizes Java with Spring Framwork. MVC
-								model and Mybatis are used to allow this system to do CRUD operations on database. Users
-								can create thier own accounts and save shopping histories with high scurity realized by
-								Spring Security. <br>
-								<span style="color: rgb(255, 153, 0)">Technologies used: Java, Spring boot, Spring
-									scurity, Mybatis,
-									PostgreSQL
-								</span>
-							</p>
-							<a href="https://github.com/kensukeseno/OnlineMarket_HandmadeJewelry_backend"
-								class="special">Go
-								to codes</a>
-						</article>
-						<article>
-							<a class="image"><img src="images/mokaeikaiwa.png" alt="" /></a>
-							<h3 class="major">English conversation school (Mokaeikaiwa) website</h3>
-							<p>This is a website for an English conversation school named "Mokaeikaiwa" in Japan.
-								The school is targeting students aged from 3 to 18,
-								so the website is designed to give friendly impressions by using bright colors and
-								pictures
-								of fun classes. Potential students can easily contact the school through the contact
-								form on the website. I developed and launched the website, and am in charge of
-								maintanance as well.<br>
-								<span style="color: rgb(255, 153, 0)">Technologies used: HTML, CSS, Javascript</span>
-							</p>
-							<a href="https://mokaeikaiwa.github.io/" class="special">Go to app</a>
-						</article>
-						<article>
-							<a class="image"><img src="images/empSys.png" alt="" /></a>
-							<h3 class="major">Employee info management system</h3>
-							<p>Database management system. The back-end program is coded with Java and interacts with
-								database, and the front-end is created using JSP.<br>
-								<span style="color: rgb(255, 153, 0)">Technologies used: Java,
-									PostgreSQL, CSS, Servlet, JSP
-								</span>
-							</p>
-							<a href="https://github.com/kensukeseno/EmpDbManagementSystem" class="special">Go to
-								codes</a>
-						</article>
-						<article>
-							<a class="image"><img src="images/hackerrank.jpg" alt="" /></a>
-							<h3 class="major">Daily conding practice</h3>
-							<p>Improving understanding of algorithms and data structures by solving problems from
-								HackerRank</p>
-							<a href="https://github.com/kensukeseno/HackerRankProsSolutions" class="special">Go to
-								codes</a>
-						</article>
-					</section>
-				</div>
-			</section>
-
-		</section>
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="inner">
-				<h2 class="major">Get in touch</h2>
-				<form method="post" action="https://formspree.io/f/xzblkwvb">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input name="Name" id="name" type="text">
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input name="Email" id="email" type="email">
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<input name="Message" id="message" type="text">
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-				<ul class="contact">
-					<li class="icon solid fa-home">
-						Calgary, Alberta, Canada<br />
-					</li>
-					<li class="icon solid fa-phone">(825) 747-8494</li>
-					<li class="icon solid fa-envelope">ks23.cn.gyz@gmail.com</li>
-					<li class="icon brands fa-linkedin"><a
-							href="https://www.linkedin.com/in/kensuke-ken-seno-8a583a280/">LinkedIn</a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled Inc. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a> (The original work has been modified.)</li>
-				</ul>
-			</div>
-		</section>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+                </form>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        Calgary, Alberta, Canada<br />
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> (825) 747-8494
+                    </li>
+                    <li><i class="fa-solid fa-envelope"></i> ks23.cn.gyz@gmail.com</li>
+                </ul>
+        </section>
+        </p>
+    </div>
 </body>
+<script src="script.js"></script>
 
 </html>

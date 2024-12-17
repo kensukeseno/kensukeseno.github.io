@@ -1,0 +1,356 @@
+:root {
+  --wrapper-margin-top: 20px;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f6f6ef;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+h1,
+h2,
+h3 {
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+}
+nav {
+  background-color: rgba(74, 98, 138, 0.7);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.dropdown {
+  display: none;
+}
+@media screen and (min-width: 980px) {
+  .inner-link {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .inner-link {
+    display: inline-block;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner-link {
+    display: none;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: inherit;
+  height: 16px;
+  color: white;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.inner-link ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0px 0px;
+}
+.inner-link ul li {
+  display: flex;
+  flex: 1;
+}
+.inner-link ul li:hover {
+  border: 0.5px solid rgb(79, 79, 79);
+  background-color: rgba(63, 85, 119, 0.7);
+  border-radius: 10%;
+}
+.inner-link ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0px;
+}
+#linkedin {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 0px;
+}
+#linkedin img {
+  height: 16px;
+}
+.main {
+  width: 100%;
+}
+section {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.top {
+  height: 100vh;
+  width: 100%;
+  margin-top: 0px;
+  background: url("images/top_background.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 600;
+  padding-top: 130px;
+  color: white;
+  font-size: 5em;
+  margin: 0px 0px 0px 50px;
+}
+h1 span::after {
+  display: inline-block;
+  content: "";
+  height: 0.7em;
+  width: 2px;
+  background: white;
+  animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::after {
+  display: none;
+}
+.top h2 {
+  color: #fff;
+  font-weight: 600;
+  color: white;
+  font-size: 3em;
+  margin: 0px 0px 0px 50px;
+  border-bottom: none;
+}
+.top h2 span.start-blinking::after {
+  display: inline-block;
+  content: "";
+  height: 0.7em;
+  width: 2px;
+  background: white;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+h2 {
+  border-bottom: 1px solid grey;
+  padding-top: 1.5em;
+  padding-bottom: 10px;
+}
+#about .about-wrapper {
+  margin-top: var(--wrapper-margin-top);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px 0px;
+}
+#about .about-wrapper div {
+  width: 50%;
+  min-width: 300px;
+}
+#about img {
+  max-width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.job-wrapper {
+  margin-top: var(--wrapper-margin-top);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+/* .job,
+.job tr {
+  border-collapse: collapse;
+  border: 1px solid black;
+} */
+.job {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2%;
+  width: 30%;
+  min-width: 300px;
+}
+.job td:nth-child(1) {
+  width: 1.5em;
+}
+.job h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0.5em;
+  width: 50%;
+  height: 0.5em;
+  transform: skew(-12deg);
+  background: rgba(122, 178, 211, 0.5);
+}
+.job tr:nth-child(1) {
+  height: 4em;
+}
+.job tr:nth-child(2),
+.job tr:nth-child(3),
+.job tr:nth-child(4) {
+  height: 2em;
+  text-decoration: underline;
+}
+.job img {
+  display: inline-block;
+  width: 1em;
+  vertical-align: middle;
+}
+.article-wrapper {
+  margin-top: var(--wrapper-margin-top);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px 0px;
+}
+article {
+  color: white;
+  background-color: #7ab2d3;
+  width: 45%;
+  min-width: 300px;
+  border-radius: 1%;
+  border: 0.1px solid #7ab2d3;
+}
+article > div {
+  width: 95%;
+  margin: 0px auto;
+}
+article img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+article h3 {
+  border-bottom: 1px solid white;
+  padding: 10px 0 10px 0;
+}
+article div p:nth-child(3) {
+  color: rgb(255, 192, 246);
+}
+.anckor-container {
+  display: flex;
+}
+article a {
+  display: block;
+  padding: 0.25rem 0px;
+  text-decoration: none;
+  color: white;
+}
+.arrow {
+  display: inline-block;
+  width: 1.5rem;
+  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+.contact-wrapper {
+  margin-top: var(--wrapper-margin-top);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px 0px;
+}
+.contact-wrapper form,
+.contact-wrapper > ul {
+  width: 50%;
+  min-width: 300px;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field input {
+  width: 80%;
+  height: 2.5em;
+}
+.field textarea {
+  width: 80%;
+}
+.actions input {
+  font-size: 1.5em;
+  color: white;
+  background-color: #7ab2d3;
+  border: 1px solid #7ab2d3;
+  border-radius: 5px;
+}
+.actions input:hover {
+  background-color: #5ba5d0;
+}
+.contact-info {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#contact label {
+  font-size: 1.5em;
+}
+.contact-info {
+  font-size: 1.5em;
+  list-style-type: none;
+}
