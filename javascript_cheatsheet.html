@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cheatsheet_styles.css">
+    <script src="https://kit.fontawesome.com/fc56f060fa.js" crossorigin="anonymous"></script>
+    <title>Javascript Cheat Sheet</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <nav>
+            <div class="dropdown">
+                <div onclick="myFunction()" class="dropbtn fa-solid fa-bars"></div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#global-functions">Global Functions</a>
+                    <a href="#loops">Loops</a>
+                    <a href="#array-methods">Array Methods</a>
+                    <a href="#strings">Strings</a>
+                </div>
+            </div>
+            <div class="inner-link">
+                <ul>
+                    <li>
+                        <a href="#global-functions">Global Functions</a>
+                    </li>
+                    <li>
+                        <a href="#loops">Loops</a>
+                    </li>
+                    <li>
+                        <a href="#array-methods">Array Methods</a>
+                    </li>
+                    <li>
+                        <a href="#strings">Strings</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="portfolio"><a href="index.html">portfolio</a></div>
+        </nav>
+    </div>
+    <div class="main">
+        <section id="global-functions">
+            <div>
+                <h2>Global Functions</h2>
+                <div class="items">
+                    <table class="single-item">
+                        <tr>
+                            <td>setTimeout(function () {
+                                }, milliseconds);</td>
+                            <td><em>-Description</em><br>Executes a function after a specified number of milliseconds.
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="single-item">
+                        <tr>
+                            <td>console.log(a);</td>
+                            <td><em>-Description</em><br>Prints messages or data to the console, which is useful for
+                                debugging and testing purposes.
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="single-item">
+                        <tr>
+                            <td>alert(a); </td>
+                            <td><em>-Description</em><br>Displays an alert box with a specified message and an OK
+                                button.
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="single-item">
+                        <tr>
+                            <td>isNaN();</td>
+                            <td><em>-Description</em><br>Checks if a value is not a number.</td>
+                        </tr>
+                    </table>
+                    <table class="single-item">
+                        <tr>
+                            <td>parseInt();</td>
+                            <td><em>-Description</em><br>Parses a string and return an integer of the specified radix.
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+        <section id="loops">
+            <h2>Loops</h2>
+            <div class="items">
+                <table class="single-item">
+                    <tr>
+                        <td>html = "";<br>
+                            for (var data of arr) {<br>
+                            html += data;<br>
+                            }</td>
+                        <td><em>-Description</em><br>Executes operations to every data in an array.</td>
+                    </tr>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>var i = 1;<br>
+                            do {<br>
+                            i *= 2;<br>
+                            } while (i < 100) </td>
+                        <td><em>-Description</em><br>Executes the code block once, before checking if the condition is
+                            true, then it will repeat the loop as long as the condition is true.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="array-methods">
+            <h2>Array Methods</h2>
+            <div class="items">
+                <table class="single-item">
+                    <tr>
+                        <td>arr.push("something");</td>
+                        <td><em>-Description</em><br>Adds new element to the end.</td>
+                    </tr>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>arr.splice(2, 0, "Pug", "Boxer"); </td>
+                        <td><em>-Description</em><br>Adds elements (where, how many to remove, element list).</td>
+                    </tr>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>arr.sort();</td>
+                        <td><em>-Description</em><br>Sorts string alphabetically.</td>
+                    </tr>
+                </table>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>arr.sort(function(a, b){return a - b});</td>
+                        <td><em>-Description</em><br>Numeric sort</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="strings">
+            <h2>Strings</h2>
+            <div class="items">
+                <table class="single-item">
+                    <tr>
+                        <td>str.toUpperCase();<br>
+                            str.toLowerCase();</td>
+                        <td><em>-Description</em><br>Converts to upper/lower case.</td>
+                    </tr>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>str1.concat(" ", str2);</td>
+                        <td><em>-Description</em><br>Concatenates strings.</td>
+                    </tr>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>str.split(string);</td>
+                        <td><em>-Description</em><br>Splitting the string on the given string and gives an array.</td>
+                    </tr>
+                </table>
+                </table>
+                <table class="single-item">
+                    <tr>
+                        <td>str.slice(3, 6);</td>
+                        <td><em>-Description</em><br>Cuts out a string and returns it.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="cheatsheet_script.js"></script>
+
+</html>

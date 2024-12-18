@@ -3,23 +3,27 @@ const dynamicTileText = document.querySelector(".top h2 span");
 const greeting = "Hi, I'm KEN!";
 const title = "Software Developer";
 
-// Variables to track the position and deletion status of the word
+// A variable to track the position of the word
 let charIndex = 0;
 
+// Add an effect on a sentence.
+// Parameter: a sentence and a target element to display the sentence
 function typeEffect(text, targetText){
     const currentChar = text.substring(0, charIndex);
     targetText.textContent = currentChar;
 
     if (charIndex < text.length) {
         charIndex++;
+        // Take a longer timeout when encountering a space
         if(text[charIndex - 2] == " "){
-            setTimeout(function (){typeEffect(text, targetText)}, 600);
+            setTimeout(function (){typeEffect(text, targetText)}, 200);
         }else{
-            setTimeout(function (){typeEffect(text, targetText)}, 100);
+            setTimeout(function (){typeEffect(text, targetText)}, 50);
         }
     }else{
         charIndex = 0;
         targetText.classList.add("stop-blinking");
+        // Apply this animation to the title text as well
         if(text == greeting){
             dynamicTileText.classList.add("start-blinking");
             setTimeout(function (){typeEffect(title, dynamicTileText)}, 600);

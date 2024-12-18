@@ -4,8 +4,6 @@
 * {
   box-sizing: border-box;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-html {
   scroll-behavior: smooth;
 }
 body {
@@ -39,6 +37,7 @@ nav {
   display: none;
   position: relative;
 }
+/* Menu becomes a dropdown when the viewport width is less then 600px */
 @media screen and (min-width: 980px) {
   .inner-link {
     display: inline-block;
@@ -75,11 +74,9 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-
   top: 40px;
   background-color: white;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
 }
 
 /* Links inside the dropdown */
@@ -139,7 +136,6 @@ section {
   width: 90%;
   margin: 50px auto;
 }
-
 .top {
   height: 100vh;
   width: 100%;
@@ -149,7 +145,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 h1 {
   color: #fff;
   font-weight: 600;
@@ -185,12 +180,12 @@ h1 span.stop-blinking::after {
   background: white;
   animation: blink 0.7s infinite;
 }
+/* Define the ocupacy step of animation */
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
-
 h2 {
   border-bottom: 1px solid grey;
   padding-top: 1.5em;
@@ -221,17 +216,12 @@ h2 {
   justify-content: space-around;
   gap: 5px;
 }
-/* .job,
-.job tr {
-  border-collapse: collapse;
-  border: 1px solid black;
-} */
 .job {
   background-color: white;
   border: 1px solid black;
   border-radius: 2%;
   width: 30%;
-  min-width: 300px;
+  min-width: 250px;
   padding-bottom: 0.5em;
 }
 .job td:nth-child(1) {
@@ -241,6 +231,7 @@ h2 {
   position: relative;
   z-index: 1;
 }
+/* Create a underline for company names */
 .job h3::after {
   content: "";
   display: block;
@@ -250,7 +241,6 @@ h2 {
   height: 0.3em;
   transform: skew(-12deg);
   background: rgba(122, 178, 211, 0.5);
-  /* top: 3em; */
   z-index: 0;
 }
 .job tr:nth-child(1) {

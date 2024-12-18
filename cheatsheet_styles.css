@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f6f6ef;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+h1,
+h2,
+h3 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+}
+nav {
+  background-color: rgba(74, 98, 138, 0.7);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  z-index: 2;
+}
+.dropdown {
+  display: none;
+  position: relative;
+}
+@media screen and (min-width: 980px) {
+  .inner-link {
+    display: inline-block;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .inner-link {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner-link {
+    display: none;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.inner-link ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0px 0px;
+}
+.inner-link ul li {
+  display: flex;
+  flex: 1;
+}
+.inner-link ul li:hover {
+  border: 0.5px solid rgb(79, 79, 79);
+  background-color: rgba(63, 85, 119, 0.7);
+  border-radius: 10%;
+}
+.inner-link ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0px;
+}
+#portfolio {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 0px;
+}
+#portfolio a {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 2px;
+}
+.main {
+  width: 100%;
+}
+section {
+  width: 90%;
+  margin: 0px auto;
+}
+.single-item,
+.single-item tr,
+.single-item td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.single-item td:nth-child(1) {
+  width: 40%;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 5px;
+}
+.single-item {
+  width: 30%;
+  min-width: 300px;
+  background-color: white;
+}
